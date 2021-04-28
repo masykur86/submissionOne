@@ -25,6 +25,9 @@ li {
 
 a {
     text-decoration: none;
+    min-width: 44px;
+    min-height: 44px;
+
 }
 
 .header{
@@ -43,6 +46,7 @@ a {
     display: none;
 }
 
+
 .bar {
     display: block;
     width: 25px;
@@ -53,14 +57,22 @@ a {
     background-color:var(--onPrimary);
 }
 
+.fa-bars{
+    color: var(--onPrimary);
+    min-width: 44px;
+    min-height: 44px;
+}
 .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 44px;
+    min-height: 44px;
 }
 
 .nav-item {
     margin-left: 5rem;
+    
 }
 
 .nav-link{
@@ -123,6 +135,19 @@ a {
     aspect-ratio: 100 / 29;
 }
 
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #bf1722;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+ }
+  
+ .skip-link:focus {
+    top: 0;
+ }
 
 .title_content{
     text-align: center;
@@ -181,16 +206,20 @@ a {
 .restaurant__item__name{
     font-size: 1.5rem;
     font-family: 'Rubik', sans-serif;
+ 
 }
 
 .restaurant__item__name a{
     padding: .75rem 0;
     display: inline-block;
+  
 }
 
 .restaurant__item__name a{
     text-decoration: none;
     color: #212121;
+    min-width: 44px;
+    min-height: 44px;
 }
 
 .restaurant__item__name a:hover{

@@ -10,8 +10,8 @@ class RestaurantItem extends HTMLElement {
             <article class="restaurant__item">
                 <img class="restaurant__item__thumbnail" alt="${this.name}" src="${this.pictureUrl}" >
                 <div class="restaurant__item__location">
-              
-                    ${this.location}
+                <i class="fas fa-map-marker-alt">   ${this.location}</i>
+                   
                 </div>
                 <div class="restaurant__item__data">
                     <h1 class="restaurant__item__name">
@@ -19,10 +19,10 @@ class RestaurantItem extends HTMLElement {
                     </h1>
                     <div class="restaurant__item__rating">
                     Rating:                   
-                        ${this.rating}
+                        ${this.rating} <i class="fas fa-star"></i>
                     </div>
                     <p class="restaurant__item__description">
-                        ${this.description}
+                        ${this.description} 
                     </p>
                 </div>
             </article>
